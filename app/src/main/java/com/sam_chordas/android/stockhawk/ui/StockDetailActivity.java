@@ -97,7 +97,7 @@ public class StockDetailActivity extends AppCompatActivity implements LoaderMana
         if (hasAxes) {
             Axis axisY = new Axis().setHasLines(true);
             if (hasAxesNames) {
-                axisY.setName("Axis Y");
+                axisY.setName("price");
             }
             lineChartData.setAxisYLeft(axisY);
             lineChartData.setAxisXBottom(new Axis(axisValues));
