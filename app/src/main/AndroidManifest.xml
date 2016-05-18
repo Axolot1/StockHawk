@@ -30,6 +30,9 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".ui.StockDetailActivity"
+            android:label="@string/stock_detail"/>
+
         <service
             android:name="com.sam_chordas.android.stockhawk.service.StockTaskService"
             android:exported="true"
