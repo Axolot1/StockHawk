@@ -1,14 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    >
+    tools:context=".ui.StockDetailActivity">
 
-    <lecho.lib.hellocharts.view.LineChartView
-        android:id="@+id/chart"
+
+    <include layout="@layout/loading_view" />
+
+    <include layout="@layout/error_view" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/contentView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-    </lecho.lib.hellocharts.view.LineChartView>
+        android:layout_height="match_parent">
+
+        <lecho.lib.hellocharts.view.LineChartView
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
 
 </FrameLayout>

@@ -13,4 +13,10 @@
   <string name="add_stock">add stock</string>
   <string name="network_hint">check your net work connetion and swipe to fresh</string>
   <string name="stock_detail">Stock Detail</string>
+  <string name="duplicateStock">This stock is already saved!</string>
+  <string name="network_error">An error has occurred! click here to retry</string>
+  <string name="price">price:</string>
+  <string name="errorMsg_1">Error while loading data</string>
+  <string name="errorMsg_2">Error while loading data. Click here to retry</string>
+  <string name="loading">loading data</string>
 </resources>
